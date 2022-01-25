@@ -105,6 +105,8 @@ const Navbar = (props) => {
     }
   }));
 
+  const basePath = process.env.REACT_APP_BASE_URL
+
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -112,7 +114,7 @@ const Navbar = (props) => {
     {
       icon: <DashboardIcon />,
       title: 'Dashboard',
-      route: '/dashboard',
+      route: basePath+'/dashboard',
       isFocused: true
     },
   ]);

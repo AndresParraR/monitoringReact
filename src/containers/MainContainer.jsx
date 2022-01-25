@@ -56,6 +56,8 @@ function MainContainer() {
     },
   }));
 
+  const basePath = process.env.REACT_APP_BASE_URL
+
   const classes = useStyles();
 
   return (
@@ -67,10 +69,10 @@ function MainContainer() {
           <Router>
             <Navbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} drawerWidth={drawerWidth}/>
             <Switch>
-              <Route path="/" exact>
-                <Redirect to="/dashboard" />
+              <Route path={basePath} exact>
+                <Redirect to={basePath+"/dashboard"} />
               </Route>
-              <Route path="/dashboard" component={Dashboard}/>
+              <Route path={basePath+"/dashboard"} component={Dashboard}/>
             </Switch>
           </Router>
         </Provider>
