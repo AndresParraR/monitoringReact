@@ -1,5 +1,6 @@
 {
-  "name": "dashboard-react",
+  "name": "monitoringReact",
+  "homepage": "https://andresparrar.github.io/monitoringReact/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
