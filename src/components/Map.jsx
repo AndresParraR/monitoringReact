@@ -66,7 +66,7 @@ const Map = (props) => {
       map.flyTo(state.map.center);
     }
   })
-  
+
   return (
     <MapContainer style={{height:"85vh", width:"100%"}} center={state.map.center} zoom={18} whenCreated={setmap} scrollWheelZoom={true}>
       <TileLayer
